@@ -59,6 +59,10 @@ main = function()
 
     -- add community item info
     for ItemID, DESC in pairs(community_iteminfo) do
+        result, msg = AddItemIdentifiedDesc(ItemID, "^FF0000[Community Description]^000000")
+        if not result == true then
+            return false, msg
+        end
         for k, v in pairs(DESC.identifiedDescriptionName) do
             result, msg = AddItemIdentifiedDesc(ItemID, v)
             if not result == true then
