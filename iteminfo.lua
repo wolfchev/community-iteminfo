@@ -10,11 +10,20 @@ universalUnidentifiedDescription = {
 markupToken = {
     ["<lb>"] = {text = "\n^FFFFFF-^000000"},
     ["<bla>"] = {text = "^000000"},
-    ["<g>"] = {text = "^019404"},
+    ["<g>"] = {text = "^1a9401"},
     ["<blu>"] = {text = "^0404d1"},
     ["<r>"] = {text = "^FF0000"},
     ["<sk>"] = {text = "^0437d1"},
+    ["<pr>"] = {text = "^800080"},
+    ["<tl>"] = {text = "^005270"},
+    ["<eq>"] = {text = "^777777"},
+    ["<gr>"] = {text = "^d3d3d3"},
     ["</sk>"] = {text = "^000000"},
+    ["</>"] = {text = "^000000"},
+    ["VCT"] = {text = "Variable Cast Time"},
+    ["FCT"] = {text = "Fixed Cast Time"},
+    ["ACD"] = {text = "After Cast Delay"},
+    ["LRD"] = {text = "Ranged Damage"},
 }
 
 main = function() 
