@@ -7,6 +7,16 @@ universalUnidentifiedDescription = {
     "Can be identified by using a [Magnifier]"
 }
 
+markupToken = {
+    ["<lb>"] = {text = "\n^FFFFFF-^000000"},
+    ["<bla>"] = {text = "^000000"},
+    ["<g>"] = {text = "^019404"},
+    ["<blu>"] = {text = "^0404d1"},
+    ["<r>"] = {text = "^FF0000"},
+    ["<sk>"] = {text = "^0437d1"},
+    ["</sk>"] = {text = "^000000"},
+}
+
 main = function() 
     for ItemID, DESC in pairs(tbl) do
         local unidentifiedDisplayName = "";
@@ -64,7 +74,13 @@ main = function()
             return false, msg
         end
         for k, v in pairs(DESC.identifiedDescriptionName) do
-            result, msg = AddItemIdentifiedDesc(ItemID, v)
+
+            local desc = v
+            for k2, v2 in pairs(markupToken) do
+                desc = desc:gsub(k2,v2.text)
+            end
+
+            result, msg = AddItemIdentifiedDesc(ItemID, desc)
             if not result == true then
                 return false, msg
             end
