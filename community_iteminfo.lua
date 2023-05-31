@@ -11,7 +11,7 @@ community_iteminfo = {
             "<IND>MaxSP+ 25%",
             "<IND>Reduce ACD by 20%<LB>",
             "If <SK>Lv. 5 Dragon Howling</> is learned,",
-            "<IND>Reduce damage taken from normal and boss class by 20%<LB>",
+            "<IND>RDTF normal and boss class by 20%<LB>",
             "If <SK>Lv. 10 Dragon's Breath</> and <SK>Lv. 10 Dragon's Water Breath</> are learned,",
             "<IND>Increase LRD by 50%",
             "<IND>Reduce FCT of <SK>Dragon's Breath</> and <SK>Dragon's Water Breath</> by 0.2 sec<LB>",
@@ -108,7 +108,8 @@ community_iteminfo = {
     [480114]    = {
         -- Striking Mikoshi
         identifiedDescriptionName = {
-            "Reduce damage from normal, boss and player class by 5%<LB>",
+            "RDTF normal and boss class by 5%",
+            "RDTF player and doram race by 5%<LB>",
             "<G>For every refine</>,",
             "<IND>Reduce ACD by 1%",
             "<IND>Increase physical damage against all class by 2%<LB>",
@@ -123,7 +124,8 @@ community_iteminfo = {
             "<PR>Set Bonus",
             "<TL>Striking Mikoshi",
             "Striking Hat</>",
-            "<IND>Increase LRD by 25%, recover 5 SP per attack<LB>",
+            "<IND>Increase LRD by 25%",
+            "<IND>Recover 5 SP per attack<LB>",
             "<PR>Set Bonus",
             "<TL>Striking Mikoshi",
             "Striking Shoes</>",
