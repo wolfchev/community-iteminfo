@@ -8,9 +8,15 @@ universalUnidentifiedDescription = {
 }
 
 markupToken = {
-    ["<LB>"] = {text = "\n^FFFFFF-^000000"},
-    ["<IND>"] = {text = "^777777- ^000000"},
-    ["<IND2>"] = {text = "^777777-- ^000000"},
+    -- they didn't like my rainbow  
+    --["<LB>"] = {text = "^ff0000\n—^ff8000—^ffff00—^80ff00—^00ff00—^00ff80—^00ffff—^0080ff—^0000ff—^8000ff—^d70ead—^ff0080—^000000"},
+    -- blank linebreak
+    --["<LB>"] = {text = "\n^FFFFFF—^000000"},
+    -- black linebreak
+    ["<LB>"] = {text = "^000000\n————————————"},
+    ["<IND>"] = {text = "^777777• ^000000"},
+    ["<IND2>"] = {text = "^777777 º ^000000"},
+    ["<IND3>"] = {text = "^777777  • ^000000"},
     ["<BLA>"] = {text = "^000000"},
     ["<G>"] = {text = "^1a9401"},
     ["<BLU>"] = {text = "^0404d1"},
@@ -26,6 +32,7 @@ markupToken = {
     ["FCT"] = {text = "Fixed Cast Time"},
     ["ACD"] = {text = "After Cast Delay"},
     ["LRD"] = {text = "Ranged Damage"},
+    ["RDTF"] = {text = "Reduce damage taken from"}
 }
 
 main = function() 
