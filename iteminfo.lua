@@ -9,6 +9,8 @@ universalUnidentifiedDescription = {
 
 markupToken = {
     ["<LB>"] = {text = "\n^FFFFFF-^000000"},
+    ["<IND>"] = {text = "^777777- ^000000"},
+    ["<IND2>"] = {text = "^777777-- ^000000"},
     ["<BLA>"] = {text = "^000000"},
     ["<G>"] = {text = "^1a9401"},
     ["<BLU>"] = {text = "^0404d1"},
