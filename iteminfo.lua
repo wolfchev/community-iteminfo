@@ -28,11 +28,25 @@ markupToken = {
     ["<GR>"] = {text = "^d3d3d3"},
     ["</SK>"] = {text = "^000000"},
     ["</>"] = {text = "^000000"},
+    -- string constants
     ["VCT"] = {text = "Variable Cast Time"},
     ["FCT"] = {text = "Fixed Cast Time"},
     ["ACD"] = {text = "After Cast Delay"},
     ["LRD"] = {text = "Ranged Damage"},
-    ["RDTF"] = {text = "Reduce damage taken from"}
+    ["CTD"] = {text = "Critical Damage"},
+    ["RDTF"] = {text = "Reduce damage taken from"},
+    -- refines
+    ["@5"] = {text = "^1a9401When refined to +5 or higher,^000000"},
+    ["@6"] = {text = "^1a9401When refined to +6 or higher,^000000"},
+    ["@7"] = {text = "^1a9401When refined to +7 or higher,^000000"},
+    ["@8"] = {text = "^1a9401When refined to +8 or higher,^000000"},
+    ["@9"] = {text = "^1a9401When refined to +9 or higher,^000000"},
+    ["@10"] = {text = "^1a9401When refined to +10 or higher,^000000"},
+    ["@11"] = {text = "^1a9401When refined to +11 or higher,^000000"},
+    ["@12"] = {text = "^1a9401When refined to +12 or higher,^000000"},
+    ["@13"] = {text = "^1a9401When refined to +13 or higher,^000000"},
+    -- set bonus
+    ["<SB>"] = {text = "^800080Set Bonus^005270\n"},
 }
 
 main = function() 
