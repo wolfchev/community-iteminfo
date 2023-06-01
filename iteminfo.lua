@@ -108,7 +108,7 @@ main = function()
             desc = desc:gsub("@","")
             
             -- Every X Refines Of
-            desc = desc:gsub("E%d+RO$a","^1a9401For every %0 refines of %1,^000000")
+            desc = desc:gsub("E%d+RO","^1a9401For every %0 refines of ")
             desc = desc:gsub("E%d+RO", function(s) return s:gsub("E",""):gsub("RO","")end)
 
             -- Every X Refines
