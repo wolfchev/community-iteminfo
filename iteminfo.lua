@@ -33,18 +33,9 @@ markupToken = {
     ["FCT"] = {text = "Fixed Cast Time"},
     ["ACD"] = {text = "After Cast Delay"},
     ["LRD"] = {text = "Ranged Damage"},
-    ["CTD"] = {text = "Critical Damage"},
+    ["CRITD"] = {text = "Critical Damage"},
     ["RDTF"] = {text = "Reduce damage taken from"},
-    -- refines
-    ["@5"] = {text = "^1a9401When refined to +5 or higher,^000000"},
-    ["@6"] = {text = "^1a9401When refined to +6 or higher,^000000"},
-    ["@7"] = {text = "^1a9401When refined to +7 or higher,^000000"},
-    ["@8"] = {text = "^1a9401When refined to +8 or higher,^000000"},
-    ["@9"] = {text = "^1a9401When refined to +9 or higher,^000000"},
-    ["@10"] = {text = "^1a9401When refined to +10 or higher,^000000"},
-    ["@11"] = {text = "^1a9401When refined to +11 or higher,^000000"},
-    ["@12"] = {text = "^1a9401When refined to +12 or higher,^000000"},
-    ["@13"] = {text = "^1a9401When refined to +13 or higher,^000000"},
+    ["ER"] = {text = "^1a9401For every refine^000000,"},
     -- set bonus
     ["<SB>"] = {text = "^800080Set Bonus^005270\n"},
 }
@@ -111,6 +102,18 @@ main = function()
             for k2, v2 in pairs(markupToken) do
                 desc = desc:gsub(k2,v2.text)
             end
+
+            -- Refine at X
+            desc = desc:gsub("@%d+","^1a9401When refined to +%0 or higher,^000000")
+            desc = desc:gsub("@","")
+            
+            -- Every X Refines Of
+            desc = desc:gsub("E%d+RO","^1a9401For every %0 refines of ")
+            desc = desc:gsub("E%d+RO", function(s) return s:gsub("E",""):gsub("RO","")end)
+
+            -- Every X Refines
+            desc = desc:gsub("E%d+R","^1a9401For every %0 refines,^000000")
+            desc = desc:gsub("E%d+R", function(s) return s:gsub("E",""):gsub("R","")end)
 
             result, msg = AddItemIdentifiedDesc(ItemID, desc)
             if not result == true then
