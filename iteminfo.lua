@@ -38,6 +38,7 @@ markupToken = {
     ["ER"] = {text = "^1a9401For every refine^000000,"},
     -- set bonus
     ["<SB>"] = {text = "^800080Set Bonus^005270\n"},
+    ["<SM>"] = {text = "^800080Set Malus^005270\n"},
 }
 
 main = function() 
