@@ -45,7 +45,7 @@ community_iteminfo = {
             "Class: <EQ>All</>",
         }
     },
-    [18851] = {
+    [15391] = {
         -- Red Dragon Plate
         identifiedDescriptionName = {
             "STR +12",
