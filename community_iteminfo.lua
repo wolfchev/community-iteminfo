@@ -464,6 +464,34 @@ community_iteminfo = {
             "Class: <EQ>All</>",
         }
     },
+    [19453] = {
+        -- Jejecap Type J
+        identifiedDescriptionName = {
+            "Casting is uninterruptible",
+            "<IND>NOWOE",
+            "Reduce ACD by 15%",
+            "Reduce VCT of <SK>Crazy Vines</> by 50%",
+            "Increase damage of <SK>Acid Bomb</> and <SK>Crazy Vines</> by 10%<LB>",
+            "For every Lvl. of <SK>Crazy Vines</>,",
+            "<IND>Reduce ACD by 6%<LB>",
+            "If <SK>Lv.5 Fire Expansion</> is learned,",
+            "<IND>Increase physical damage against boss class by 50%<LB>",
+            "If <SK>Lv.5 Mandragora Howling</> is learned,",
+            "<IND>Reduce ACD by 25%",
+            "<IND>Reduce Cooldown of <SK>Crazy Vines</> by 0.45 sec<LB>",
+            "@9",
+            "<IND>Increase damage of <SK>Acid Bomb</> and <SK>Crazy Vines</> by 15%<LB>",
+            "@11",
+            "<IND>Increase damage of <SK>Acid Bomb</> and <SK>Crazy Vines</> by 25%<LB>",
+            "@13",
+            "<IND>Ignore DEF against normal and boss class by 100%<LB>",
+            "Type: <EQ>Upper Headgear</>",
+            "Defense: <EQ>18</>",
+            "Weight: <EQ>100</>",
+            "Required Level: <EQ>100</>",
+            "Class: <EQ>All</>",
+        }
+    },
     [20933] = {
         -- Illusion Engine Wing Type A
         identifiedDescriptionName = {
@@ -556,6 +584,28 @@ community_iteminfo = {
             "Class: <EQ>All</>",
         }
     },
+    [25359] = {
+        -- Slightly Aged Antique Box 
+        identifiedDescriptionName = {
+            "Prontera: <NAVI>^4D4DFF[Sheep]^000000<INFO>prt_in,56,57,0,100,0,0</INFO></NAVI>^000000",
+            "Payon: <NAVI>^4D4DFF[Sheep]^000000<INFO>payon,140,174,0,100,0,0</INFO></NAVI>^000000",
+            "Aldebaran: <NAVI>^4D4DFF[Sheep]^000000<INFO>aldeba_in,97,55,0,100,0,0</INFO></NAVI>^000000",
+            "Comodo: <NAVI>^4D4DFF[Sheep]^000000<INFO>cmd_in01,128,171,0,100,0,0</INFO></NAVI>^000000",
+            "Morocc: <NAVI>^4D4DFF[Sheep]^000000<INFO>morocc162,258,0,100,0,0</INFO></NAVI>^000000<LB>",
+            "Weight: <EQ>20</>",
+        }
+    },
+    [27355] = {
+        -- Polluted Raydrick Archer Card
+        identifiedDescriptionName = {
+            "Increase LRD by 10%<LB>",
+            "<SB>Powerful Archer Skeleton Card</>",
+            "Increase LRD by 5%<LB>",
+            "Type: <EQ>Card</>",
+            "Location: <EQ>Weapon</>",
+            "Weight: <EQ>1</>",
+        }
+    },
     [400177]    = {
         -- Fafnir Helm
         identifiedDescriptionName = {
@@ -592,7 +642,7 @@ community_iteminfo = {
             "<IND>MATK- 50%",
             "<IND>Adds a chance to autocast <SK>Lv1. Millenium Shield</>",
             "<IND>Chance to autocast is increased when helmet refinement is above +6 and +8",
-            "<IND><R>This effect does not work in WoE maps</><LB>",
+            "<IND>NOWOE<LB>",
             "ER",
             "<INDRDTF Fire and Water elements by 3%<LB>",
             "@6",
@@ -770,6 +820,32 @@ community_iteminfo = {
             "Weight: <EQ>10</>",
             "Required Level: <EQ>100</>",
             "Class: <EQ>All</>",
+        }
+    },
+    [590011] = {
+        -- Awakened Meteor Striker
+        identifiedDescriptionName = {
+            "Unbreakable",
+            "E2R",
+            "<IND>ATK +15<LB>",
+            "E3R",
+            "<IND>Increase damage of <SK>Vulcan Arm</> and <SK>Knuckle Boost</> by 10%<LB>",
+            "@7",
+            "<IND>Increase damage of <SK>Vulcan Arm</> and <SK>Knuckle Boost</> by 15%<LB>",
+            "@9",
+            "<IND>Increase damage of <SK>Arm Cannon</> by 25%<LB>",
+            "@11",
+            "<IND>Increase LRD by 15%",
+            "<IND>Reduce VCT by 15%<LB>",
+            "<SB>Great Hero's Boots</>",
+            "<IND>STR +10",
+            "<IND>Increase LRD by 5%<LB>",
+            "Type: <EQ>Mace</>",
+            "Attack: <EQ>320</>",
+            "Weapon Level: <EQ>4</>",
+            "Weight: <EQ>350</>",
+            "Required Level: <EQ>150</>",
+            "Class: <EQ>Mechanic Class</>",
         }
     },
 }
