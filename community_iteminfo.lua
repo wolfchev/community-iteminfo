@@ -644,7 +644,7 @@ community_iteminfo = {
             "<IND>Chance to autocast is increased when helmet refinement is above +6 and +8",
             "<IND>NOWOE<LB>",
             "ER",
-            "<INDRDTF Fire and Water elements by 3%<LB>",
+            "<IND>RDTF Fire and Water elements by 3%<LB>",
             "@6",
             "<IND>Increase damage of <SK>Storm Blast</> by 20%<LB>",
             "@7",
