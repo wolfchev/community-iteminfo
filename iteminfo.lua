@@ -36,8 +36,10 @@ markupToken = {
     ["CRITD"] = {text = "Critical Damage"},
     ["RDTF"] = {text = "Reduce damage taken from"},
     ["ER"] = {text = "^1a9401For every refine^000000,"},
+    ["NOWOE"] = {text = "^FF0000This effect does not work in WoE maps^000000"},
     -- set bonus
     ["<SB>"] = {text = "^800080Set Bonus^005270\n"},
+    ["<SM>"] = {text = "^800080Set Malus^005270\n"},
 }
 
 main = function() 
