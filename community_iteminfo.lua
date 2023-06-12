@@ -761,7 +761,7 @@ community_iteminfo = {
             "Class: <EQ>All</>",
         }
     },
-    [470027]    = {
+    [470112]    = {
         -- Moaning of Evil Spirits
         identifiedDescriptionName = {
             "MATK +10%",
