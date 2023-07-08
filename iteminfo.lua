@@ -95,7 +95,7 @@ main = function()
 
     -- add community item info
     for ItemID, DESC in pairs(community_iteminfo) do
-        result, msg = AddItemIdentifiedDesc(ItemID, "^FF0000[Community Description]^000000
+        result, msg = AddItemIdentifiedDesc(ItemID, "^FF0000[Community Description]^000000")
         result, msg = AddItemUnidentifiedDesc(ItemID, "^FF0000[Community Description]^000000")
         if not result == true then
             return false, msg
