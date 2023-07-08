@@ -120,7 +120,7 @@ main = function()
             desc = desc:gsub("E%d+R", function(s) return s:gsub("E",""):gsub("R","")end)
 
             result, msg = AddItemIdentifiedDesc(ItemID, desc)
-            result, msg = AddItemUnidentifiedDesc(ItemID, v)
+            result, msg = AddItemUnidentifiedDesc(ItemID, desc)
             if not result == true then
                 return false, msg
             end
