@@ -60,20 +60,21 @@ main = function()
         if community_iteminfo[ItemID] == nil then
             for k, v in pairs(DESC.identifiedDescriptionName) do
                 result, msg = AddItemIdentifiedDesc(ItemID, v)
+                result, msg = AddItemUnidentifiedDesc(ItemID, v)
                 if not result == true then
                     return false, msg
                 end
             end
         end
 
-        -- universal unidentified item description
+        --[[ universal unidentified item description
         for k, v in pairs(universalUnidentifiedDescription) do
             result, msg = AddItemUnidentifiedDesc(ItemID, v)
             if not result == true then
                 return false, msg
             end
         end
-
+        ]]--
         if nil ~= DESC.EffectID then
 			result, msg = AddItemEffectInfo(ItemID, DESC.EffectID)
 			if not result == true then
@@ -95,6 +96,7 @@ main = function()
     -- add community item info
     for ItemID, DESC in pairs(community_iteminfo) do
         result, msg = AddItemIdentifiedDesc(ItemID, "^FF0000[Community Description]^000000")
+        result, msg = AddItemUnidentifiedDesc(ItemID, "^FF0000[Community Description]^000000")
         if not result == true then
             return false, msg
         end
@@ -118,6 +120,7 @@ main = function()
             desc = desc:gsub("E%d+R", function(s) return s:gsub("E",""):gsub("R","")end)
 
             result, msg = AddItemIdentifiedDesc(ItemID, desc)
+            result, msg = AddItemUnidentifiedDesc(ItemID, desc)
             if not result == true then
                 return false, msg
             end
