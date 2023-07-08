@@ -66,17 +66,15 @@ main = function()
                 end
             end
         end
-		
-		--[[
-        -- universal unidentified item description
+
+        --[[ universal unidentified item description
         for k, v in pairs(universalUnidentifiedDescription) do
             result, msg = AddItemUnidentifiedDesc(ItemID, v)
             if not result == true then
                 return false, msg
             end
         end
-		]]--
-		
+        ]]--
         if nil ~= DESC.EffectID then
 			result, msg = AddItemEffectInfo(ItemID, DESC.EffectID)
 			if not result == true then
@@ -85,8 +83,8 @@ main = function()
 		end
         k = DESC.identifiedResourceName
         v = DESC.identifiedDisplayName
-    end 
-	
+    end
+    
     -- add user defined effects
     for ItemID, DESC in pairs(customeffects) do
         result, msg = AddItemEffectInfo(ItemID, DESC.EffectID)
@@ -122,7 +120,7 @@ main = function()
             desc = desc:gsub("E%d+R", function(s) return s:gsub("E",""):gsub("R","")end)
 
             result, msg = AddItemIdentifiedDesc(ItemID, desc)
-			result, msg = AddItemUnidentifiedDesc(ItemID, desc)
+			result, msg = AddItemUnidentifiedDesc(ItemID, v)
             if not result == true then
                 return false, msg
             end
